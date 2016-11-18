@@ -11,7 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
 
-  font: 1em "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 *, *::before, *::after {
@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  overflow: auto;
+  overflow: hidden;
   color: #fff;
   background-color: #18294f;
 }
@@ -39,6 +39,7 @@ nav ul {
   padding: 0;
   list-style-type: none;
   text-align: left;
+  font-size: 1.125rem;
 }
 
 nav a {
@@ -46,11 +47,31 @@ nav a {
   float: left;
   width: 100%;
   color: #6c8fe0;
-  font-size: 1.125rem;
   padding: .5em .75em;
+  white-space: nowrap;
 }
 
 nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav a {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav a {
+    width: 25%;
+  }
+
 }
