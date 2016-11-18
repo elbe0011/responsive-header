@@ -71,6 +71,11 @@ nav a:hover {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   nav a {
     width: 25%;
   }
@@ -81,6 +86,7 @@ nav a:hover {
 
   html {
     font-size: 120%;
+    line-height: 1.5;
   }
 
   header h1 {
