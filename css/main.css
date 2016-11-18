@@ -27,6 +27,7 @@ header {
   overflow: hidden;
   color: #fff;
   background-color: #18294f;
+  padding-bottom: 5px;
 }
 
 header h1 {
@@ -72,6 +73,39 @@ nav a:hover {
 
   nav a {
     width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+  }
+
+  header h1 {
+    display: inline-block;
+    width: auto;
+    float: left;
+    padding-left: 1rem;
+  }
+
+  nav ul {
+    float: right;
+    width: 27em;
+    text-align: left;
+  }
+
+  nav a {
+    width: auto;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
