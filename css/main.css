@@ -11,7 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
 
-  font-family: "Ubuntu", sans-serif;
+  font: 1em "Ubuntu", sans-serif;
 }
 
 *, *::before, *::after {
@@ -20,14 +20,37 @@ html {
 
 body {
   margin: 0;
-  overflow: auto;
+  text-align: center;
 }
 
-ul {
+header {
+  overflow: auto;
+  color: #fff;
+  background-color: #18294f;
+}
+
+header h1 {
+  float: left;
+  width: 100%;
+  margin: .9rem 0;
+}
+
+nav ul {
   padding: 0;
   list-style-type: none;
+  text-align: left;
 }
 
-a {
+nav a {
   text-decoration: none;
+  float: left;
+  width: 100%;
+  color: #6c8fe0;
+  font-size: 1.125rem;
+  padding: .5em .75em;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
 }
